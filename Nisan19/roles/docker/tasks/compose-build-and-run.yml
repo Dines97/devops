@@ -1,0 +1,5 @@
+- name: Build and start services
+  docker_compose:
+    project_src: /vagrant
+    state: present
+    build: yes

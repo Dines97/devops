@@ -1,2 +1,13 @@
 ---
 # tasks file for docker
+- name: Install docker
+  import_tasks: docker-install.yml
+
+- name: Docker pip install
+  import_tasks: docker-pip.yml
+
+- name: Docker compose pip install
+  import_tasks: compose-pip.yml
+
+- name: Docker compose build and run
+  import_tasks: compose-build-and-run.yml
