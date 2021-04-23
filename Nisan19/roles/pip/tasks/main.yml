@@ -1,0 +1,4 @@
+---
+# tasks file for pip
+- name: Pip install
+  import_tasks: pip-install.yml
