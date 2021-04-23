@@ -39,4 +39,5 @@ Since the DB was required, the root entry point simply prints a list of 20 emplo
 ![img_1.png](img/img_1.png)
 
 An example of working with bootcamp = devops:
+
 ![img_2.png](img/img_2.png)
