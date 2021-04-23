@@ -1,0 +1,15 @@
+- name: Add NGINX key
+  apt_key:
+    url: https://nginx.org/keys/nginx_signing.key
+
+- name: Add NGINX repository
+  apt_repository:
+    repo: deb https://nginx.org/packages/mainline/ubuntu/ focal nginx
+    state: present
+
+- name: Update cache and install NGINX
+  apt:
+    name: nginx
+    update_cache: yes
+    state: present
+    
