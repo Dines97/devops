@@ -137,9 +137,7 @@ First, Vagrant launches a virtual machine called app. As an image I used Ubuntu 
 note that using other images most likely will not work. It has to do with how I wrote the roles. Even though I knew
 about Ansible Galaxy for my first project including Ansible, I wanted to write a lot of things myself.
 
-I also configured port forwarding in the Vagrantfile so that we have access to the guest port 80 through the host port
-
-8080.
+I also configured port forwarding in the Vagrantfile so that we have access to the guest port 80 through the host port 8080.
 
 Next, Vagrant provides playbook.yml, and we move on to Ansible. For ansible, I have created 3 roles pip, docker and
 nginx which are executed in this order.
