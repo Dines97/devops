@@ -15,7 +15,7 @@ class Employee(db.Model):
 
 @app.route('/', methods=['GET'])
 def home():
-    arg = request.args.get('bootcamp')
+    arg = request.headers.get('bootcamp')
 
     if arg == 'devops':
         return "Hosgeldin DevOps"
